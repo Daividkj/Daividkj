@@ -178,15 +178,6 @@
   <img src="assets/divider.svg" alt="divider" />
 </div>
 
-<img src="assets/headers/header_languages.svg" alt="Language Distribution" />
-<div align="center">
-  <img src="assets/languages.svg?v=2" alt="Core Languages" />
-</div>
-
-<div align="center">
-  <img src="assets/divider.svg" alt="divider" />
-</div>
-
 <img src="assets/headers/header_3d.svg" alt="Isometric Contributions" />
 <div align="center">
   <picture>
