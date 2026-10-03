@@ -15,14 +15,14 @@
 ## 💼 `[ PROFESSIONAL_EXPERTISE ]`
 <div align="left">
   <blockquote>
-    <p><b>Software Architect & Technical Lead</b> with 5+ years of experience driving large-scale implementations and system architecture across regional and multinational organizations.</p>
+    <p><b>Software Architect & Technical Lead</b> with 5+ years of experience driving large-scale implementations and system architecture across regional and multinational organizations. Proven track record of aligning complex technical strategies with business objectives.</p>
   </blockquote>
   <ul>
-    <li><b>Architecture & Leadership:</b> Technical design and deployment of highly scalable enterprise solutions, overseeing multi-country operations and ensuring system reliability.</li>
-    <li><b>Complex Integrations:</b> Orchestrating contracts and integrations between corporate microservices, third-party APIs (Google Maps, Firebase, WhatsApp), and legacy systems.</li>
-    <li><b>Cloud Infrastructure & DevOps:</b> Architecting resilient cloud solutions (AWS, Azure) with container orchestration (Docker, Kubernetes) and designing robust CI/CD pipelines.</li>
-    <li><b>AI & Advanced Analytics:</b> Integrating AI capabilities into enterprise workflows and leveraging data analytics (Python, Power BI, Tableau) for strategic business intelligence.</li>
-    <li><b>Engineering & Agile Delivery:</b> Strong foundation in algorithmic problem-solving, API security, and driving cross-functional teams using Agile (Scrum) methodologies.</li>
+    <li><b>Architecture & Leadership:</b> Technical design and deployment of highly scalable enterprise solutions. Extensive experience overseeing multi-country operations, defining robust architectural blueprints, and guaranteeing system reliability under high-concurrency demands.</li>
+    <li><b>Complex Integrations:</b> Expertise in orchestrating intricate integration patterns and establishing rigorous data contracts. Capable of seamlessly bridging modern corporate microservices, distributed third-party APIs, and legacy core systems to create cohesive technological ecosystems.</li>
+    <li><b>Cloud Infrastructure & DevOps:</b> Architecting resilient, highly available cloud infrastructures centered around containerization and scalable orchestration. Dedicated to fostering a culture of continuous delivery, ensuring automated, secure, and zero-downtime release lifecycles.</li>
+    <li><b>AI & Advanced Analytics:</b> Strategic integration of artificial intelligence capabilities into enterprise workflows. Deep focus on transforming complex operational data into actionable business intelligence through advanced modeling and automated reporting structures.</li>
+    <li><b>Engineering & Agile Delivery:</b> Solid foundation in algorithmic problem-solving, secure API governance, and technical mentorship. Adept at driving cross-functional, high-performance teams from conception to delivery by championing agile frameworks and rigorous engineering standards.</li>
   </ul>
 </div>
 
