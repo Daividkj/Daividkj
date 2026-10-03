@@ -51,7 +51,26 @@
 
 ## 💻 `[ SYS.INFO / CORE_STACK ]`
 <div align="center">
-  <a href="https://skillicons.dev" target="_blank" rel="noopener noreferrer"><img src="https://skillicons.dev/icons?i=js,ts,react,nextjs,nodejs,python,fastapi,aws,gcp,docker,linux,git,postgres,sqlite,c,cpp&theme=dark" /></a><img src="assets/icons/salesforce.svg" /><img src="assets/icons/tableau.svg" /><img src="assets/icons/powerbi.svg" />
+  <img src="https://skillicons.dev/icons?i=js&theme=dark" />
+  <img src="https://skillicons.dev/icons?i=ts&theme=dark" />
+  <img src="https://skillicons.dev/icons?i=react&theme=dark" />
+  <img src="https://skillicons.dev/icons?i=nextjs&theme=dark" />
+  <img src="https://skillicons.dev/icons?i=nodejs&theme=dark" />
+  <img src="https://skillicons.dev/icons?i=python&theme=dark" />
+  <img src="https://skillicons.dev/icons?i=fastapi&theme=dark" />
+  <img src="https://skillicons.dev/icons?i=aws&theme=dark" />
+  <img src="https://skillicons.dev/icons?i=gcp&theme=dark" />
+  <img src="https://skillicons.dev/icons?i=docker&theme=dark" />
+  <img src="https://skillicons.dev/icons?i=linux&theme=dark" />
+  <img src="https://skillicons.dev/icons?i=git&theme=dark" />
+  <img src="https://skillicons.dev/icons?i=postgres&theme=dark" />
+  <img src="https://skillicons.dev/icons?i=sqlite&theme=dark" />
+  <img src="https://skillicons.dev/icons?i=c&theme=dark" />
+  <img src="https://skillicons.dev/icons?i=cpp&theme=dark" />
+  <!-- Custom Icons -->
+  <img src="assets/icons/salesforce.svg" />
+  <img src="assets/icons/tableau.svg" />
+  <img src="assets/icons/powerbi.svg" />
 </div>
 
 <div align="center">
