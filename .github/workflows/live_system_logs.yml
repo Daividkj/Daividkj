@@ -45,6 +45,8 @@ jobs:
         run: |
           git config --global user.name 'github-actions[bot]'
           git config --global user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          sed -i "s/?v=[0-9]*/?v=${GITHUB_RUN_ID}/g" README.md
+          git add README.md
           git add assets/terminal.svg
           git add profile-3d-contrib/
           git commit -m "chore: auto-update 3D Matrix and System Logs [skip ci]" || echo "No changes to commit"
