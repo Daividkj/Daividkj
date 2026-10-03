@@ -37,12 +37,19 @@ jobs:
           GITHUB_ACTOR: ${{ github.actor }}
         run: python generate_terminal.py
 
+      - name: Generate Language Distribution SVG
+        env:
+          GH_TOKEN: ${{ secrets.GH_PAT }}
+          GITHUB_ACTOR: ${{ github.actor }}
+        run: python generate_languages.py
+
       # 3. Commit everything
       - name: Commit and Push Changes
         run: |
           git config --global user.name 'github-actions[bot]'
           git config --global user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git add assets/terminal.svg
+          git add assets/languages.svg
           git add profile-3d-contrib/
-          git commit -m "chore: auto-update 3D Matrix and System Logs [skip ci]" || echo "No changes to commit"
+          git commit -m "chore: auto-update 3D Matrix, System Logs and Languages [skip ci]" || echo "No changes to commit"
           git push

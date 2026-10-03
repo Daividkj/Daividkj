@@ -4,11 +4,12 @@ import os
 os.makedirs('assets', exist_ok=True)
 os.makedirs('assets/headers', exist_ok=True)
 
-# 1. GENERATE NEW HEADERS
+# 1. HEADERS
 new_headers = [
     {"filename": "radar", "text": "[ ARCHITECTURE_RADAR ]", "color1": "#00FFFF", "color2": "#FF00FF"},
     {"filename": "3d", "text": "[ ISOMETRIC_CONTRIBUTIONS ]", "color1": "#00FF00", "color2": "#FFFF00"},
-    {"filename": "terminal", "text": "[ LIVE_SYSTEM_LOGS ]", "color1": "#FF00FF", "color2": "#00FFFF"}
+    {"filename": "terminal", "text": "[ LIVE_SYSTEM_LOGS ]", "color1": "#FF00FF", "color2": "#00FFFF"},
+    {"filename": "languages", "text": "[ LANGUAGE_DISTRIBUTION ]", "color1": "#F2C811", "color2": "#E36826"}
 ]
 
 for sec in new_headers:
@@ -31,13 +32,20 @@ for sec in new_headers:
         f.write(svg)
 
 
-# 2. GENERATE ARCHITECTURE RADAR
-# 5 Axes: Architecture, AI Systems, CLOUD &amp; DEVOPS, Backend, FRONTEND &amp; MOBILE
-labels = ["SYSTEM ARCHITECTURE", "AI &amp; AGENT SYSTEMS", "CLOUD &amp; DEVOPS", "BACKEND &amp; APIS", "FRONTEND &amp; MOBILE"]
-scores = [0.95, 0.90, 0.85, 0.95, 0.80]
+# 2. HIGHLY DETAILED ARCHITECTURE RADAR
+labels = ["SYSTEM ARCHITECTURE", "AI & AGENT SYSTEMS", "CLOUD & DEVOPS", "BACKEND & APIS", "FRONTEND & MOBILE"]
+sub_labels = [
+    ["Microservices, Zero-Trust", "Design Patterns"],
+    ["Local LLMs, Agentic Workflows", "Qwen, Llama, Prompt Eng"],
+    ["AWS, Docker, K8s", "CI/CD, Cloudflare Tunnels"],
+    ["Node.js, FastAPI, Python", "PostgreSQL, GraphQL"],
+    ["React, Next.js, Flutter", "Impeccable UI/UX"]
+]
+scores_expert = [0.95, 0.90, 0.85, 0.95, 0.80]
+scores_hands_on = [0.80, 0.95, 0.90, 0.90, 0.85]
 
-center_x, center_y = 400, 200
-radius = 120
+center_x, center_y = 400, 220
+radius = 140
 
 def get_point(angle_deg, r):
     angle_rad = math.radians(angle_deg)
@@ -45,74 +53,85 @@ def get_point(angle_deg, r):
 
 angles = [-90, -18, 54, 126, 198]
 
-# Background webs
-web_levels = [0.2, 0.4, 0.6, 0.8, 1.0]
+# Concentric polygons (20%, 40%, 60%, 80%, 100%)
 webs_svg = ""
-for level in web_levels:
+for level in [0.2, 0.4, 0.6, 0.8, 1.0]:
     pts = [get_point(a, radius * level) for a in angles]
     points_str = " ".join([f"{x},{y}" for x, y in pts])
-    webs_svg += f'<polygon points="{points_str}" fill="none" stroke="#30363D" stroke-width="1"/>\n'
+    opacity = 0.2 if level < 1.0 else 0.6
+    webs_svg += f'<polygon points="{points_str}" fill="none" stroke="#00FFFF" stroke-width="1" opacity="{opacity}"/>\n'
 
-# Axes lines
+# Axes
 axes_svg = ""
 for a in angles:
     px, py = get_point(a, radius)
-    axes_svg += f'<line x1="{center_x}" y1="{center_y}" x2="{px}" y2="{py}" stroke="#30363D" stroke-width="1"/>\n'
+    axes_svg += f'<line x1="{center_x}" y1="{center_y}" x2="{px}" y2="{py}" stroke="#00FFFF" stroke-width="1" opacity="0.4"/>\n'
 
-# Data Polygon
-data_pts = [get_point(angles[i], radius * scores[i]) for i in range(5)]
-data_points_str = " ".join([f"{x},{y}" for x, y in data_pts])
-data_polygon = f'''
-<polygon points="{data_points_str}" fill="rgba(0, 255, 255, 0.2)" stroke="#00FFFF" stroke-width="2">
-    <animate attributeName="opacity" values="0.7; 1; 0.7" dur="4s" repeatCount="indefinite" />
+# Expert Polygon (Strategic/Architecture)
+pts_exp = [get_point(angles[i], radius * scores_expert[i]) for i in range(5)]
+str_exp = " ".join([f"{x},{y}" for x, y in pts_exp])
+poly_exp = f'''
+<polygon points="{str_exp}" fill="rgba(255, 0, 255, 0.2)" stroke="#FF00FF" stroke-width="2">
+    <animate attributeName="opacity" values="0.6; 1; 0.6" dur="3s" repeatCount="indefinite" />
 </polygon>
 '''
 
-# Dots on data points
-dots_svg = ""
-for x, y in data_pts:
-    dots_svg += f'''
-    <circle cx="{x}" cy="{y}" r="4" fill="#FF00FF">
-        <animate attributeName="r" values="3;5;3" dur="2s" repeatCount="indefinite"/>
-    </circle>
-    '''
+# Hands-on Polygon (Implementation)
+pts_hands = [get_point(angles[i], radius * scores_hands_on[i]) for i in range(5)]
+str_hands = " ".join([f"{x},{y}" for x, y in pts_hands])
+poly_hands = f'''
+<polygon points="{str_hands}" fill="rgba(0, 255, 255, 0.3)" stroke="#00FFFF" stroke-width="1" stroke-dasharray="4 2">
+    <animate attributeName="opacity" values="0.8; 0.4; 0.8" dur="4s" repeatCount="indefinite" />
+</polygon>
+'''
 
-# Labels
+# Labels & Sub-labels
 labels_svg = ""
-label_offsets = [(0, -20), (30, -5), (20, 20), (-20, 20), (-30, -5)]
+label_offsets = [(0, -35), (35, -10), (25, 25), (-25, 25), (-35, -10)]
 text_anchors = ["middle", "start", "start", "end", "end"]
 for i in range(5):
     lx, ly = get_point(angles[i], radius + 15)
     ox, oy = label_offsets[i]
     labels_svg += f'''
-    <text x="{lx + ox}" y="{ly + oy}" font-family="Courier New, monospace" font-size="12" font-weight="bold" fill="#E6EDF3" text-anchor="{text_anchors[i]}">
-        {labels[i]}
-    </text>
+    <text x="{lx + ox}" y="{ly + oy}" font-family="Courier New, monospace" font-size="14" font-weight="bold" fill="#E6EDF3" text-anchor="{text_anchors[i]}">{labels[i].replace("&", "&amp;")}</text>
+    <text x="{lx + ox}" y="{ly + oy + 16}" font-family="Courier New, monospace" font-size="11" fill="#8B949E" text-anchor="{text_anchors[i]}">{sub_labels[i][0]}</text>
+    <text x="{lx + ox}" y="{ly + oy + 30}" font-family="Courier New, monospace" font-size="11" fill="#8B949E" text-anchor="{text_anchors[i]}">{sub_labels[i][1]}</text>
     '''
 
-radar_svg = f'''<svg width="800" height="400" viewBox="0 0 800 400" xmlns="http://www.w3.org/2000/svg">
-    <defs>
-        <radialGradient id="bgGrad" cx="50%" cy="50%" r="50%">
-            <stop offset="0%" stop-color="#00FFFF" stop-opacity="0.05" />
-            <stop offset="100%" stop-color="#0D1117" stop-opacity="0" />
-        </radialGradient>
-    </defs>
-    <rect width="800" height="400" fill="#0D1117" rx="15" />
-    <circle cx="400" cy="200" r="{radius}" fill="url(#bgGrad)" />
+# Legend
+legend_svg = '''
+<g transform="translate(20, 20)">
+    <rect x="0" y="0" width="12" height="12" fill="rgba(255, 0, 255, 0.4)" stroke="#FF00FF" stroke-width="1"/>
+    <text x="20" y="10" font-family="Courier New, monospace" font-size="12" fill="#E6EDF3">Strategic Design &amp; Architecture</text>
     
+    <rect x="0" y="25" width="12" height="12" fill="rgba(0, 255, 255, 0.4)" stroke="#00FFFF" stroke-width="1" stroke-dasharray="2 2"/>
+    <text x="20" y="35" font-family="Courier New, monospace" font-size="12" fill="#E6EDF3">Hands-on Execution &amp; Coding</text>
+</g>
+'''
+
+radar_svg = f'''<svg width="800" height="450" viewBox="0 0 800 450" xmlns="http://www.w3.org/2000/svg">
+    <rect width="800" height="450" fill="#0D1117" rx="15" stroke="#30363D" stroke-width="1" />
+    
+    <!-- Tech Grid Background -->
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+        <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#ffffff" stroke-width="1" stroke-opacity="0.03" />
+    </pattern>
+    <rect width="800" height="450" fill="url(#grid)" />
+
+    {legend_svg}
     {webs_svg}
     {axes_svg}
-    {data_polygon}
-    {dots_svg}
+    {poly_exp}
+    {poly_hands}
     {labels_svg}
     
-    <!-- Rotating decorative outer ring -->
-    <circle cx="400" cy="200" r="{radius + 50}" fill="none" stroke="#FF00FF" stroke-width="1" stroke-dasharray="2 10" opacity="0.3">
-        <animateTransform attributeName="transform" type="rotate" from="0 400 200" to="360 400 200" dur="40s" repeatCount="indefinite"/>
+    <!-- Outer Ring -->
+    <circle cx="{center_x}" cy="{center_y}" r="{radius + 10}" fill="none" stroke="#30363D" stroke-width="1" stroke-dasharray="5 5">
+        <animateTransform attributeName="transform" type="rotate" from="0 {center_x} {center_y}" to="360 {center_x} {center_y}" dur="60s" repeatCount="indefinite"/>
     </circle>
 </svg>'''
 
 with open('assets/radar.svg', 'w', encoding='utf-8') as f:
     f.write(radar_svg)
 
-print("Radar and headers generated!")
+print("Advanced Radar and headers generated!")
