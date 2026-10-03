@@ -41,7 +41,7 @@ for ev in events:
         time_str = f"{hours_ago // 24}d ago"
 
     if ev_type == 'PushEvent':
-        commits = len(ev['payload'].get('commits', []))
+        commits = ev['payload'].get('size', 1)
         log_lines.append(f"> [DEV] Pushed {commits} commit(s) to {repo} ({time_str})")
     elif ev_type == 'IssuesEvent':
         action = ev['payload'].get('action')

@@ -32,8 +32,8 @@ for sec in new_headers:
 
 
 # 2. GENERATE ARCHITECTURE RADAR
-# 5 Axes: Architecture, AI Systems, Cloud & DevOps, Backend, Frontend & Mobile
-labels = ["SYSTEM ARCHITECTURE", "AI & AGENT SYSTEMS", "CLOUD & DEVOPS", "BACKEND & APIS", "FRONTEND & MOBILE"]
+# 5 Axes: Architecture, AI Systems, CLOUD &amp; DEVOPS, Backend, FRONTEND &amp; MOBILE
+labels = ["SYSTEM ARCHITECTURE", "AI &amp; AGENT SYSTEMS", "CLOUD &amp; DEVOPS", "BACKEND &amp; APIS", "FRONTEND &amp; MOBILE"]
 scores = [0.95, 0.90, 0.85, 0.95, 0.80]
 
 center_x, center_y = 400, 200
