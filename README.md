@@ -74,11 +74,11 @@
   <img src="https://skillicons.dev/icons?i=java&theme=dark" />
   <img src="https://skillicons.dev/icons?i=firebase&theme=dark" />
   <img src="https://skillicons.dev/icons?i=postman&theme=dark" />
-  <img src="https://skillicons.dev/icons?i=bruno&theme=dark" />
   <!-- Custom Icons -->
   <img src="assets/icons/salesforce.svg" />
   <img src="assets/icons/tableau.svg" />
   <img src="assets/icons/powerbi.svg" />
+  <img src="assets/icons/bruno.svg" />
 </div>
 
 <div align="center">
