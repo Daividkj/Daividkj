@@ -6,7 +6,7 @@
 
 <div align="center">
   <a href="https://github.com/Daividkj" target="_blank" rel="noopener noreferrer">
-    <img src="https://readme-typing-svg.demolab.com?font=Share+Tech+Mono&size=26&pause=1000&color=00FFFF&center=true&vCenter=true&width=800&lines=>+System+initialized...;>+Salesforce+Architect+|+Technical+Lead;>+Building+scalable+enterprise+systems...;>+DevOps+|+Cloud+Infrastructure+|+Data..." alt="Typing SVG" />
+    <img src="https://readme-typing-svg.demolab.com?font=Share+Tech+Mono&size=26&pause=1000&color=00FFFF&center=true&vCenter=true&width=800&lines=>+System+initialized...;>+Software+Architect+|+Technical+Lead;>+Building+scalable+enterprise+systems...;>+DevOps+|+Cloud+Infrastructure+|+Data..." alt="Typing SVG" />
   </a>
 </div>
 
@@ -15,13 +15,14 @@
 ## 💼 `[ PROFESSIONAL_EXPERTISE ]`
 <div align="left">
   <blockquote>
-    <p><b>Salesforce Architect & Technical Lead</b> with 5+ years of experience driving large-scale implementations across regional and multinational organizations.</p>
+    <p><b>Software Architect & Technical Lead</b> with 5+ years of experience driving large-scale implementations and system architecture across regional and multinational organizations.</p>
   </blockquote>
   <ul>
-    <li><b>Architecture & Leadership:</b> Technical design and deployment of highly scalable solutions (Sales, Service, Field Service, Experience Cloud) across multiple countries.</li>
-    <li><b>Complex Integrations:</b> Orchestrating contracts and integrations between corporate microservices, external APIs (Google Maps, Firebase, WhatsApp), and legacy systems.</li>
-    <li><b>DevOps & Security:</b> Designing CI/CD pipelines for regional operations and implementing robust API security practices and governance.</li>
-    <li><b>Cross-functional Skills:</b> Strong background in data analytics (Python, Power BI, Tableau), C/C++, and containerized cloud deployments (Docker, AWS, Azure, Kubernetes).</li>
+    <li><b>Architecture & Leadership:</b> Technical design and deployment of highly scalable enterprise solutions, overseeing multi-country operations and ensuring system reliability.</li>
+    <li><b>Complex Integrations:</b> Orchestrating contracts and integrations between corporate microservices, third-party APIs (Google Maps, Firebase, WhatsApp), and legacy systems.</li>
+    <li><b>Cloud Infrastructure & DevOps:</b> Architecting resilient cloud solutions (AWS, Azure) with container orchestration (Docker, Kubernetes) and designing robust CI/CD pipelines.</li>
+    <li><b>AI & Advanced Analytics:</b> Integrating AI capabilities into enterprise workflows and leveraging data analytics (Python, Power BI, Tableau) for strategic business intelligence.</li>
+    <li><b>Engineering & Agile Delivery:</b> Strong foundation in algorithmic problem-solving, API security, and driving cross-functional teams using Agile (Scrum) methodologies.</li>
   </ul>
 </div>
 
