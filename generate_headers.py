@@ -1,0 +1,46 @@
+import os
+
+os.makedirs('assets/headers', exist_ok=True)
+
+sections = [
+    {"filename": "expertise", "text": "[ PROFESSIONAL_EXPERTISE ]", "color1": "#00FFFF", "color2": "#FF00FF"},
+    {"filename": "ai", "text": "[ AI_ARCHITECTURE & AGENT_SYSTEMS ]", "color1": "#FF00FF", "color2": "#FFFF00"},
+    {"filename": "stack", "text": "[ SYS.INFO / CORE_STACK ]", "color1": "#00A1E0", "color2": "#F2C811"},
+    {"filename": "projects", "text": "[ DEPLOYED_MODULES / PROJECTS ]", "color1": "#00FF00", "color2": "#00FFFF"},
+    {"filename": "telemetry", "text": "[ GITHUB_TELEMETRY ]", "color1": "#FF5555", "color2": "#FF00FF"},
+    {"filename": "transmission", "text": "[ SYSTEM_TRANSMISSION ]", "color1": "#FFFF00", "color2": "#00FFFF"}
+]
+
+for sec in sections:
+    svg = f'''<svg width="800" height="60" viewBox="0 0 800 60" xmlns="http://www.w3.org/2000/svg">
+    <!-- Tech Glyph -->
+    <g transform="translate(0, 15)">
+        <rect x="0" y="0" width="8" height="24" fill="{sec['color1']}">
+             <animate attributeName="opacity" values="1;0.3;1;1;0.1;1" keyTimes="0;0.05;0.1;0.8;0.85;1" dur="3s" repeatCount="indefinite" />
+        </rect>
+        <rect x="12" y="4" width="4" height="16" fill="{sec['color2']}">
+             <animate attributeName="opacity" values="1;1;0.2;1" keyTimes="0;0.4;0.5;1" dur="2s" repeatCount="indefinite" />
+        </rect>
+    </g>
+    
+    <!-- Title -->
+    <text x="30" y="34" font-family="Courier New, monospace" font-size="22" font-weight="bold" fill="#E6EDF3" letter-spacing="2">
+        {sec['text']}
+    </text>
+    
+    <!-- Decorative Bar underneath -->
+    <rect x="30" y="45" width="770" height="1" fill="#30363D" />
+    
+    <!-- Animated glowing dot moving on the bar -->
+    <rect x="30" y="44" width="40" height="3" fill="{sec['color1']}">
+        <animate attributeName="x" values="30; 760; 30" dur="10s" repeatCount="indefinite" />
+    </rect>
+    <rect x="30" y="44" width="10" height="3" fill="{sec['color2']}">
+        <animate attributeName="x" values="30; 790; 30" dur="10s" repeatCount="indefinite" />
+    </rect>
+</svg>'''
+    
+    with open(f"assets/headers/header_{sec['filename']}.svg", "w", encoding="utf-8") as f:
+        f.write(svg)
+
+print("Headers generated successfully.")

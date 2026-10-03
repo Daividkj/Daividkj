@@ -11,7 +11,7 @@
     
     <!-- Title -->
     <text x="30" y="34" font-family="Courier New, monospace" font-size="22" font-weight="bold" fill="#E6EDF3" letter-spacing="2">
-        [ AI_ARCHITECTURE & AGENT_SYSTEMS ]
+        [ AI_ARCHITECTURE &amp; AGENT_SYSTEMS ]
     </text>
     
     <!-- Decorative Bar underneath -->
