@@ -14,7 +14,7 @@
   <img src="assets/divider.svg" alt="divider" />
 </div>
 
-## 💼 `[ PROFESSIONAL_EXPERTISE ]`
+<img src="assets/headers/header_expertise.svg" alt="Professional Expertise" />
 <div align="left">
   <blockquote>
     <p><b>Software Architect & Technical Lead</b> with 5+ years of experience driving large-scale implementations and system architecture across regional and multinational organizations. Proven track record of aligning complex technical strategies with business objectives.</p>
@@ -32,7 +32,7 @@
   <img src="assets/divider.svg" alt="divider" />
 </div>
 
-## 🧠 `[ AI_ARCHITECTURE & AGENT_SYSTEMS ]`
+<img src="assets/headers/header_ai.svg" alt="AI Architecture" />
 <div align="left">
   <blockquote>
     <p><b>Advanced AI Integration & Self-Hosted Infrastructure:</b> Extensive experience deploying, orchestrating, and interacting with both commercial and locally-hosted LLMs, achieving secure enterprise-grade availability.</p>
@@ -49,7 +49,7 @@
   <img src="assets/divider.svg" alt="divider" />
 </div>
 
-## 💻 `[ SYS.INFO / CORE_STACK ]`
+<img src="assets/headers/header_stack.svg" alt="Core Stack" />
 <div align="center">
   <img src="https://skillicons.dev/icons?i=js&theme=dark" />
   <img src="https://skillicons.dev/icons?i=ts&theme=dark" />
@@ -84,7 +84,7 @@
   <img src="assets/divider.svg" alt="divider" />
 </div>
 
-## 🌐 `[ DEPLOYED_MODULES / PROJECTS ]`
+<img src="assets/headers/header_projects.svg" alt="Deployed Modules" />
 
 > **Status:** `OPERATIONAL` | **Access:** `PUBLIC`
 > Core repositories are kept **encrypted (private)** for corporate and architectural security. Below is the access to the production systems:
@@ -168,7 +168,7 @@
   <img src="assets/divider.svg" alt="divider" />
 </div>
 
-## 📊 `[ GITHUB_TELEMETRY ]`
+<img src="assets/headers/header_telemetry.svg" alt="GitHub Telemetry" />
 <div align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=Daividkj&show_icons=true&theme=tokyonight&hide_title=true&hide_border=true&bg_color=0D1117" alt="GitHub Stats" />
   <img src="https://github-readme-streak-stats.herokuapp.com/?user=Daividkj&theme=tokyonight&hide_border=true&background=0D1117" alt="GitHub Streak" />
@@ -178,7 +178,7 @@
   <img src="assets/divider.svg" alt="divider" />
 </div>
 
-## 📜 `[ SYSTEM_TRANSMISSION ]`
+<img src="assets/headers/header_transmission.svg" alt="System Transmission" />
 <div align="center">
   <img src="assets/anime_quote.svg" alt="Anime Quote" />
 </div>
