@@ -1,32 +1,32 @@
-<svg width="800" height="120" viewBox="0 0 800 120" xmlns="http://www.w3.org/2000/svg">
-    <rect width="800" height="120" rx="10" fill="#0D1117" stroke="#30363D" stroke-width="1"/>
+<svg width="800" height="150" viewBox="0 0 800 150" xmlns="http://www.w3.org/2000/svg">
+    <rect width="800" height="150" rx="10" fill="#0D1117" stroke="#30363D" stroke-width="1"/>
     
     <!-- Progress Bar -->
     <g transform="translate(40, 40)">
         <rect x="0" y="0" width="720" height="12" rx="6" fill="#30363D" />
 
-        <rect x="0" y="0" width="191.47444646937566" height="12" fill="#3572A5">
-            <animate attributeName="width" from="0" to="191.47444646937566" dur="1.5s" fill="freeze" />
+        <rect x="0" y="0" width="191.489074005093" height="12" fill="#3572A5">
+            <animate attributeName="width" from="0" to="191.489074005093" dur="1.5s" fill="freeze" />
         </rect>
         
-        <rect x="191.47444646937566" y="0" width="183.86300959004038" height="12" fill="#f1e05a">
-            <animate attributeName="width" from="0" to="183.86300959004038" dur="1.5s" fill="freeze" />
+        <rect x="191.489074005093" y="0" width="183.85792097564533" height="12" fill="#f1e05a">
+            <animate attributeName="width" from="0" to="183.85792097564533" dur="1.5s" fill="freeze" />
         </rect>
         
-        <rect x="375.337456059416" y="0" width="166.4688673178642" height="12" fill="#3178c6">
-            <animate attributeName="width" from="0" to="166.4688673178642" dur="1.5s" fill="freeze" />
+        <rect x="375.3469949807383" y="0" width="166.4642601058075" height="12" fill="#3178c6">
+            <animate attributeName="width" from="0" to="166.4642601058075" dur="1.5s" fill="freeze" />
         </rect>
         
-        <rect x="541.8063233772803" y="0" width="80.25641221160616" height="12" fill="#e34c26">
-            <animate attributeName="width" from="0" to="80.25641221160616" dur="1.5s" fill="freeze" />
+        <rect x="541.8112550865458" y="0" width="80.25419102565152" height="12" fill="#e34c26">
+            <animate attributeName="width" from="0" to="80.25419102565152" dur="1.5s" fill="freeze" />
         </rect>
         
-        <rect x="622.0627355888864" y="0" width="46.303043242872285" height="12" fill="#663399">
-            <animate attributeName="width" from="0" to="46.303043242872285" dur="1.5s" fill="freeze" />
+        <rect x="622.0654461121973" y="0" width="46.301761754372194" height="12" fill="#663399">
+            <animate attributeName="width" from="0" to="46.301761754372194" dur="1.5s" fill="freeze" />
         </rect>
         
-        <rect x="668.3657788317587" y="0" width="40.11722572560742" height="12" fill="#355570">
-            <animate attributeName="width" from="0" to="40.11722572560742" dur="1.5s" fill="freeze" />
+        <rect x="668.3672078665695" y="0" width="40.116115436524396" height="12" fill="#355570">
+            <animate attributeName="width" from="0" to="40.116115436524396" dur="1.5s" fill="freeze" />
         </rect>
         
     </g>
@@ -34,22 +34,22 @@
     <g transform="translate(40, 80)">
 
         <circle cx="0" cy="-4" r="4" fill="#3572A5" />
-        <text x="10" y="0" font-family="Courier New, monospace" font-size="12" fill="#E6EDF3">Python 26.6%</text>
+        <text x="15" y="0" font-family="Courier New, monospace" font-size="13" font-weight="bold" fill="#E6EDF3">Python 26.6%</text>
     
-        <circle cx="120" cy="-4" r="4" fill="#f1e05a" />
-        <text x="130" y="0" font-family="Courier New, monospace" font-size="12" fill="#E6EDF3">JavaScript 25.5%</text>
+        <circle cx="250" cy="-4" r="4" fill="#f1e05a" />
+        <text x="265" y="0" font-family="Courier New, monospace" font-size="13" font-weight="bold" fill="#E6EDF3">JavaScript 25.5%</text>
     
-        <circle cx="240" cy="-4" r="4" fill="#3178c6" />
-        <text x="250" y="0" font-family="Courier New, monospace" font-size="12" fill="#E6EDF3">TypeScript 23.1%</text>
+        <circle cx="500" cy="-4" r="4" fill="#3178c6" />
+        <text x="515" y="0" font-family="Courier New, monospace" font-size="13" font-weight="bold" fill="#E6EDF3">TypeScript 23.1%</text>
     
-        <circle cx="360" cy="-4" r="4" fill="#e34c26" />
-        <text x="370" y="0" font-family="Courier New, monospace" font-size="12" fill="#E6EDF3">HTML 11.1%</text>
+        <circle cx="0" cy="26" r="4" fill="#e34c26" />
+        <text x="15" y="30" font-family="Courier New, monospace" font-size="13" font-weight="bold" fill="#E6EDF3">HTML 11.1%</text>
     
-        <circle cx="480" cy="-4" r="4" fill="#663399" />
-        <text x="490" y="0" font-family="Courier New, monospace" font-size="12" fill="#E6EDF3">CSS 6.4%</text>
+        <circle cx="250" cy="26" r="4" fill="#663399" />
+        <text x="265" y="30" font-family="Courier New, monospace" font-size="13" font-weight="bold" fill="#E6EDF3">CSS 6.4%</text>
     
-        <circle cx="600" cy="-4" r="4" fill="#355570" />
-        <text x="610" y="0" font-family="Courier New, monospace" font-size="12" fill="#E6EDF3">GDScript 5.6%</text>
+        <circle cx="500" cy="26" r="4" fill="#355570" />
+        <text x="515" y="30" font-family="Courier New, monospace" font-size="13" font-weight="bold" fill="#E6EDF3">GDScript 5.6%</text>
     
     </g>
 </svg>
