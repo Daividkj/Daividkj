@@ -28,6 +28,21 @@
 
 <br>
 
+## 🧠 `[ AI_ARCHITECTURE & AGENT_SYSTEMS ]`
+<div align="left">
+  <blockquote>
+    <p><b>Advanced AI Integration & Self-Hosted Infrastructure:</b> Extensive experience deploying, orchestrating, and interacting with both commercial and locally-hosted LLMs, achieving secure enterprise-grade availability.</p>
+  </blockquote>
+  <ul>
+    <li><b>Local AI Infrastructure:</b> Designed and built a highly optimized local AI server environment utilizing <b>llama.cpp</b> and <b>Open WebUI</b>. Evaluated and deployed state-of-the-art models like <b>Qwen 3.6 MoE (35B)</b> and <b>Qwen 3.8</b> for low-latency, private inference.</li>
+    <li><b>Secure Edge Exposure:</b> Architected a Zero-Trust network using <b>Cloudflare Tunnels and Access</b> to expose local AI endpoints securely. Enabled remote API access for IDE integration (VS Code) and a seamless Web/PWA chat interface secured by Service Tokens.</li>
+    <li><b>Agentic Tooling & Multi-Model Experience:</b> Proficient in orchestrating complex autonomous workflows using diverse AI models including <b>Gemini, Claude, GPT, and Copilot</b>. Leveraged these models alongside custom local LLMs for coding agents and automated task execution.</li>
+    <li><b>System Design & Documentation:</b> Methodically mapped the entire AI infrastructure lifecycle using C4 architecture diagrams, Architectural Decision Records (ADRs), and automated PowerShell lifecycle scripts to manage GPU resources and model states.</li>
+  </ul>
+</div>
+
+<br>
+
 ## 💻 `[ SYS.INFO / CORE_STACK ]`
 <div align="center">
   <a href="https://skillicons.dev" target="_blank" rel="noopener noreferrer"><img src="https://skillicons.dev/icons?i=js,ts,react,nextjs,nodejs,python,fastapi,aws,gcp,docker,linux,git,postgres,sqlite,c,cpp&theme=dark" /></a><img src="assets/icons/salesforce.svg" /><img src="assets/icons/tableau.svg" /><img src="assets/icons/powerbi.svg" />
