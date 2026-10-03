@@ -1,44 +1,46 @@
 <svg width="800" height="120" viewBox="0 0 800 120" xmlns="http://www.w3.org/2000/svg">
-    <style>
-        @keyframes gradientMove {
-            0% { stop-color: #00FFFF; }
-            50% { stop-color: #FF00FF; }
-            100% { stop-color: #00FFFF; }
-        }
-        @keyframes breathe {
-            0% { transform: scale(1); opacity: 0.8; }
-            50% { transform: scale(1.05); opacity: 1; }
-            100% { transform: scale(1); opacity: 0.8; }
-        }
-        @keyframes rotate {
-            0% { transform: rotate(0deg); }
-            100% { transform: rotate(360deg); }
-        }
-        .bg-rect { fill: #0D1117; stroke: url(#grad1); stroke-width: 2; }
-        .quote-text { font-family: 'Courier New', monospace; font-size: 16px; fill: #00FFFF; font-style: italic; }
-        .author-text { font-family: 'Courier New', monospace; font-size: 14px; fill: #FF00FF; font-weight: bold; }
-        .circle-outer { fill: none; stroke: url(#grad1); stroke-width: 2; stroke-dasharray: 4 4; transform-origin: 740px 60px; animation: rotate 10s linear infinite; }
-        .circle-inner { fill: none; stroke: #00FFFF; stroke-width: 1; transform-origin: 740px 60px; animation: breathe 4s cubic-bezier(0.4, 0, 0.2, 1) infinite; }
-        .circle-dot { fill: #FF00FF; animation: breathe 2s infinite; transform-origin: 740px 60px; }
-    </style>
-    <defs>
-        <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
-            <stop offset="0%" stop-color="#00FFFF">
-                <animate attributeName="stop-color" values="#00FFFF;#FF00FF;#00FFFF" dur="5s" repeatCount="indefinite" />
-            </stop>
-            <stop offset="100%" stop-color="#FF00FF">
-                <animate attributeName="stop-color" values="#FF00FF;#00FFFF;#FF00FF" dur="5s" repeatCount="indefinite" />
-            </stop>
-        </linearGradient>
-    </defs>
-    <rect class="bg-rect" width="800" height="120" rx="10" />
-    <text x="40" y="45" class="quote-text">"If you don't take risks, you can't create a future."</text>
-    <text x="40" y="80" class="author-text">> Monkey D. Luffy</text>
-    
-    <circle class="circle-outer" cx="740" cy="60" r="25" />
-    <circle class="circle-inner" cx="740" cy="60" r="15" />
-    <circle class="circle-dot" cx="740" cy="60" r="5" />
-    
+    <rect width="800" height="120" rx="10" fill="#0D1117" stroke="#00FFFF" stroke-width="1">
+        <animate attributeName="stroke" values="#00FFFF;#FF00FF;#00FFFF" dur="10s" repeatCount="indefinite" />
+    </rect>
+    <circle cx="740" cy="60" r="25" fill="none" stroke="#FF00FF" stroke-width="2" stroke-dasharray="4 4">
+        <animateTransform attributeName="transform" type="rotate" from="0 740 60" to="360 740 60" dur="20s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="740" cy="60" r="15" fill="none" stroke="#00FFFF" stroke-width="1">
+        <animate attributeName="r" values="12;16;12" dur="4s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="740" cy="60" r="5" fill="#FF00FF">
+        <animate attributeName="opacity" values="0.5;1;0.5" dur="2s" repeatCount="indefinite" />
+    </circle>
     <line x1="600" y1="20" x2="650" y2="20" stroke="#00FFFF" stroke-width="2"/>
     <line x1="600" y1="100" x2="700" y2="100" stroke="#FF00FF" stroke-width="2"/>
+
+    <g opacity="0">
+        <animate attributeName="opacity" values="0;1;1;0;0" keyTimes="0;0.030;0.170;0.200;1" dur="25s" repeatCount="indefinite" />
+        <text x="40" y="55" font-family="Courier New, monospace" font-size="16" fill="#00FFFF" font-style="italic">"If you don't take risks, you can't create a future."</text>
+        <text x="40" y="90" font-family="Courier New, monospace" font-size="14" fill="#FF00FF" font-weight="bold">> Monkey D. Luffy (One Piece)</text>
+    </g>
+
+    <g opacity="0">
+        <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.200;0.230;0.370;0.400;1" dur="25s" repeatCount="indefinite" />
+        <text x="40" y="55" font-family="Courier New, monospace" font-size="16" fill="#00FFFF" font-style="italic">"Stand up and walk. Keep moving forward. You've got two good legs."</text>
+        <text x="40" y="90" font-family="Courier New, monospace" font-size="14" fill="#FF00FF" font-weight="bold">> Edward Elric (Fullmetal Alchemist)</text>
+    </g>
+
+    <g opacity="0">
+        <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.400;0.430;0.570;0.600;1" dur="25s" repeatCount="indefinite" />
+        <text x="40" y="55" font-family="Courier New, monospace" font-size="16" fill="#00FFFF" font-style="italic">"There is no such thing as perfect... but we must still strive for it."</text>
+        <text x="40" y="90" font-family="Courier New, monospace" font-size="14" fill="#FF00FF" font-weight="bold">> Mayuri Kurotsuchi (Bleach)</text>
+    </g>
+
+    <g opacity="0">
+        <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.600;0.630;0.770;0.800;1" dur="25s" repeatCount="indefinite" />
+        <text x="40" y="55" font-family="Courier New, monospace" font-size="16" fill="#00FFFF" font-style="italic">"The ticket to the future is always open."</text>
+        <text x="40" y="90" font-family="Courier New, monospace" font-size="14" fill="#FF00FF" font-weight="bold">> Vash the Stampede (Trigun)</text>
+    </g>
+
+    <g opacity="0">
+        <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.800;0.830;0.970;1" dur="25s" repeatCount="indefinite" />
+        <text x="40" y="55" font-family="Courier New, monospace" font-size="16" fill="#00FFFF" font-style="italic">"Simplicity is the easiest path to true beauty."</text>
+        <text x="40" y="90" font-family="Courier New, monospace" font-size="14" fill="#FF00FF" font-weight="bold">> Seishuu Handa (Barakamon)</text>
+    </g>
 </svg>
