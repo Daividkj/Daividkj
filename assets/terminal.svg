@@ -1,0 +1,71 @@
+<svg width="800" height="250" viewBox="0 0 800 250" xmlns="http://www.w3.org/2000/svg">
+    <rect width="800" height="250" rx="10" fill="#0D1117" stroke="#30363D" stroke-width="2"/>
+    <!-- Mac-style top bar -->
+    <rect width="800" height="30" rx="10" fill="#161B22" />
+    <circle cx="20" cy="15" r="6" fill="#FF5F56" />
+    <circle cx="40" cy="15" r="6" fill="#FFBD2E" />
+    <circle cx="60" cy="15" r="6" fill="#27C93F" />
+    <text x="400" y="20" font-family="Courier New, monospace" font-size="12" fill="#8B949E" text-anchor="middle">
+        root@architect-sys:~# /bin/bash
+    </text>
+
+    <!-- Terminal Content -->
+    <text x="20" y="60" font-family="Courier New, monospace" font-size="14" fill="#E6EDF3" font-weight="bold">
+        $ ./fetch_recent_activity.sh --secure
+    </text>
+    <text x="20" y="80" font-family="Courier New, monospace" font-size="12" fill="#8B949E">
+        [+] ESTABLISHING SECURE CONNECTION... OK
+    </text>
+
+    
+    <clipPath id="clipLine0">
+        <rect x="20" y="85" width="0" height="20">
+            <animate attributeName="width" from="0" to="760" dur="2s" begin="0.0s" fill="freeze" />
+        </rect>
+    </clipPath>
+    <text x="20" y="100" font-family="Courier New, monospace" font-size="14" fill="#00FFFF" clip-path="url(#clipLine0)">
+        &gt; [DEV] Pushed 0 commit(s) to Daividkj/Daividkj (14h ago)
+    </text>
+    
+    <clipPath id="clipLine1">
+        <rect x="20" y="110" width="0" height="20">
+            <animate attributeName="width" from="0" to="760" dur="2s" begin="0.8s" fill="freeze" />
+        </rect>
+    </clipPath>
+    <text x="20" y="125" font-family="Courier New, monospace" font-size="14" fill="#00FFFF" clip-path="url(#clipLine1)">
+        &gt; [DEV] Pushed 0 commit(s) to Daividkj/Daividkj (14h ago)
+    </text>
+    
+    <clipPath id="clipLine2">
+        <rect x="20" y="135" width="0" height="20">
+            <animate attributeName="width" from="0" to="760" dur="2s" begin="1.6s" fill="freeze" />
+        </rect>
+    </clipPath>
+    <text x="20" y="150" font-family="Courier New, monospace" font-size="14" fill="#00FFFF" clip-path="url(#clipLine2)">
+        &gt; [DEV] Pushed 0 commit(s) to Daividkj/Daividkj (14h ago)
+    </text>
+    
+    <clipPath id="clipLine3">
+        <rect x="20" y="160" width="0" height="20">
+            <animate attributeName="width" from="0" to="760" dur="2s" begin="2.4000000000000004s" fill="freeze" />
+        </rect>
+    </clipPath>
+    <text x="20" y="175" font-family="Courier New, monospace" font-size="14" fill="#00FFFF" clip-path="url(#clipLine3)">
+        &gt; [DEV] Pushed 0 commit(s) to Daividkj/Daividkj (14h ago)
+    </text>
+    
+    <clipPath id="clipLine4">
+        <rect x="20" y="185" width="0" height="20">
+            <animate attributeName="width" from="0" to="760" dur="2s" begin="3.2s" fill="freeze" />
+        </rect>
+    </clipPath>
+    <text x="20" y="200" font-family="Courier New, monospace" font-size="14" fill="#00FFFF" clip-path="url(#clipLine4)">
+        &gt; [DEV] Pushed 0 commit(s) to Daividkj/Daividkj (14h ago)
+    </text>
+    
+
+    <!-- Blinking Cursor -->
+    <rect x="20" y="225" width="10" height="15" fill="#FF00FF">
+        <animate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite"/>
+    </rect>
+</svg>

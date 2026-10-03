@@ -1,4 +1,4 @@
-name: Update Cyberpunk Telemetry
+name: Cyberpunk System Logs & 3D Matrix
 
 on:
   schedule:
@@ -9,12 +9,20 @@ permissions:
   contents: write
 
 jobs:
-  update-telemetry:
+  generate-logs-and-3d:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v4
 
+      # 1. 3D Isometric Matrix
+      - name: Generate 3D Contribution Matrix
+        uses: yoshi389111/github-profile-3d-contrib@0.7.1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GH_PAT }}
+          USERNAME: ${{ github.repository_owner }}
+          
+      # 2. Live System Logs (Terminal)
       - name: Setup Python
         uses: actions/setup-python@v5
         with:
@@ -23,17 +31,18 @@ jobs:
       - name: Install Dependencies
         run: pip install requests
 
-      - name: Generate Telemetry SVG
+      - name: Generate Terminal Logs SVG
         env:
-          # This token needs to be created by the user and added to Repo Secrets as GH_PAT
           GH_TOKEN: ${{ secrets.GH_PAT }}
           GITHUB_ACTOR: ${{ github.actor }}
-        run: python generate_telemetry.py
+        run: python generate_terminal.py
 
+      # 3. Commit everything
       - name: Commit and Push Changes
         run: |
           git config --global user.name 'github-actions[bot]'
           git config --global user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add assets/telemetry.svg
-          git commit -m "chore: auto-update telemetry metrics [skip ci]" || echo "No changes to commit"
+          git add assets/terminal.svg
+          git add profile-3d-contrib/
+          git commit -m "chore: auto-update 3D Matrix and System Logs [skip ci]" || echo "No changes to commit"
           git push

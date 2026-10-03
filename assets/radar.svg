@@ -1,0 +1,75 @@
+<svg width="800" height="400" viewBox="0 0 800 400" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <radialGradient id="bgGrad" cx="50%" cy="50%" r="50%">
+            <stop offset="0%" stop-color="#00FFFF" stop-opacity="0.05" />
+            <stop offset="100%" stop-color="#0D1117" stop-opacity="0" />
+        </radialGradient>
+    </defs>
+    <rect width="800" height="400" fill="#0D1117" rx="15" />
+    <circle cx="400" cy="200" r="120" fill="url(#bgGrad)" />
+    
+    <polygon points="400.0,176.0 422.8253563910837,192.58359213500125 414.10684605501933,219.41640786499875 385.89315394498067,219.41640786499875 377.1746436089163,192.58359213500125" fill="none" stroke="#30363D" stroke-width="1"/>
+<polygon points="400.0,152.0 445.6507127821674,185.16718427000254 428.2136921100387,238.8328157299975 371.7863078899613,238.8328157299975 354.3492872178326,185.16718427000254" fill="none" stroke="#30363D" stroke-width="1"/>
+<polygon points="400.0,128.0 468.47606917325106,177.7507764050038 442.32053816505805,258.24922359499624 357.67946183494195,258.24922359499624 331.52393082674894,177.7507764050038" fill="none" stroke="#30363D" stroke-width="1"/>
+<polygon points="400.0,104.0 491.30142556433475,170.33436854000504 456.42738422007744,277.665631459995 343.57261577992256,277.665631459995 308.69857443566525,170.33436854000507" fill="none" stroke="#30363D" stroke-width="1"/>
+<polygon points="400.0,80.0 514.1267819554184,162.91796067500633 470.5342302750968,297.08203932499373 329.4657697249032,297.08203932499373 285.87321804458156,162.91796067500633" fill="none" stroke="#30363D" stroke-width="1"/>
+
+    <line x1="400" y1="200" x2="400.0" y2="80.0" stroke="#30363D" stroke-width="1"/>
+<line x1="400" y1="200" x2="514.1267819554184" y2="162.91796067500633" stroke="#30363D" stroke-width="1"/>
+<line x1="400" y1="200" x2="470.5342302750968" y2="297.08203932499373" stroke="#30363D" stroke-width="1"/>
+<line x1="400" y1="200" x2="329.4657697249032" y2="297.08203932499373" stroke="#30363D" stroke-width="1"/>
+<line x1="400" y1="200" x2="285.87321804458156" y2="162.91796067500633" stroke="#30363D" stroke-width="1"/>
+
+    
+<polygon points="400.0,86.0 502.7141037598766,166.62616460750567 459.9540957338323,282.51973342624467 332.99248123865806,292.22793735874404 308.69857443566525,170.33436854000507" fill="rgba(0, 255, 255, 0.2)" stroke="#00FFFF" stroke-width="2">
+    <animate attributeName="opacity" values="0.7; 1; 0.7" dur="4s" repeatCount="indefinite" />
+</polygon>
+
+    
+    <circle cx="400.0" cy="86.0" r="4" fill="#FF00FF">
+        <animate attributeName="r" values="3;5;3" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    
+    <circle cx="502.7141037598766" cy="166.62616460750567" r="4" fill="#FF00FF">
+        <animate attributeName="r" values="3;5;3" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    
+    <circle cx="459.9540957338323" cy="282.51973342624467" r="4" fill="#FF00FF">
+        <animate attributeName="r" values="3;5;3" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    
+    <circle cx="332.99248123865806" cy="292.22793735874404" r="4" fill="#FF00FF">
+        <animate attributeName="r" values="3;5;3" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    
+    <circle cx="308.69857443566525" cy="170.33436854000507" r="4" fill="#FF00FF">
+        <animate attributeName="r" values="3;5;3" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    
+    
+    <text x="400.0" y="45.0" font-family="Courier New, monospace" font-size="12" font-weight="bold" fill="#E6EDF3" text-anchor="middle">
+        SYSTEM ARCHITECTURE
+    </text>
+    
+    <text x="558.3926296998457" y="153.2827057593821" font-family="Courier New, monospace" font-size="12" font-weight="bold" fill="#E6EDF3" text-anchor="start">
+        AI & AGENT SYSTEMS
+    </text>
+    
+    <text x="499.3510090594839" y="329.2172942406179" font-family="Courier New, monospace" font-size="12" font-weight="bold" fill="#E6EDF3" text-anchor="start">
+        CLOUD & DEVOPS
+    </text>
+    
+    <text x="300.6489909405161" y="329.2172942406179" font-family="Courier New, monospace" font-size="12" font-weight="bold" fill="#E6EDF3" text-anchor="end">
+        BACKEND & APIS
+    </text>
+    
+    <text x="241.60737030015423" y="153.2827057593821" font-family="Courier New, monospace" font-size="12" font-weight="bold" fill="#E6EDF3" text-anchor="end">
+        FRONTEND & MOBILE
+    </text>
+    
+    
+    <!-- Rotating decorative outer ring -->
+    <circle cx="400" cy="200" r="170" fill="none" stroke="#FF00FF" stroke-width="1" stroke-dasharray="2 10" opacity="0.3">
+        <animateTransform attributeName="transform" type="rotate" from="0 400 200" to="360 400 200" dur="40s" repeatCount="indefinite"/>
+    </circle>
+</svg>
