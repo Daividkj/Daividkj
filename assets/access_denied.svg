@@ -1,0 +1,6 @@
+<svg width="400" height="200" viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+    <rect width="400" height="200" fill="#0B0B0C" stroke="#FF0055" stroke-width="2"/>
+    <text x="200" y="100" font-family="Courier New, monospace" font-size="24" fill="#FF0055" text-anchor="middle" font-weight="bold">[ ACCESS DENIED ]</text>
+    <text x="200" y="130" font-family="Courier New, monospace" font-size="14" fill="#888888" text-anchor="middle">CLASSIFIED ARCHITECTURE</text>
+    <line x1="50" y1="150" x2="350" y2="150" stroke="#FF0055" stroke-width="1" opacity="0.5" stroke-dasharray="4 4"/>
+</svg>
