@@ -66,8 +66,8 @@ if total_size == 0:
 sorted_langs = sorted(langs.items(), key=lambda x: x[1]["size"], reverse=True)[:6]
 
 # Build SVG
-svg = '''<svg width="800" height="120" viewBox="0 0 800 120" xmlns="http://www.w3.org/2000/svg">
-    <rect width="800" height="120" rx="10" fill="#0D1117" stroke="#30363D" stroke-width="1"/>
+svg = '''<svg width="800" height="150" viewBox="0 0 800 150" xmlns="http://www.w3.org/2000/svg">
+    <rect width="800" height="150" rx="10" fill="#0D1117" stroke="#30363D" stroke-width="1"/>
     
     <!-- Progress Bar -->
     <g transform="translate(40, 40)">
@@ -94,14 +94,17 @@ svg += '''
     <g transform="translate(40, 80)">
 '''
 
-lx = 0
-for name, info in sorted_langs:
+for i, (name, info) in enumerate(sorted_langs):
     pct = (info["size"] / total_size) * 100
+    row = i // 3
+    col = i % 3
+    lx = col * 250
+    ly = row * 30
+    
     svg += f'''
-        <circle cx="{lx}" cy="-4" r="4" fill="{info['color']}" />
-        <text x="{lx + 10}" y="0" font-family="Courier New, monospace" font-size="12" fill="#E6EDF3">{name} {pct:.1f}%</text>
+        <circle cx="{lx}" cy="{ly - 4}" r="4" fill="{info['color']}" />
+        <text x="{lx + 15}" y="{ly}" font-family="Courier New, monospace" font-size="13" font-weight="bold" fill="#E6EDF3">{name} {pct:.1f}%</text>
     '''
-    lx += 120
 
 svg += '''
     </g>
