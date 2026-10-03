@@ -75,13 +75,13 @@ svg = '''<svg width="800" height="250" viewBox="0 0 800 250" xmlns="http://www.w
     <g transform="translate(250, 125)">
 '''
 
-radius = 80
-stroke_width = 30
+radius = 90
+stroke_width = 35
 circumference = 2 * math.pi * radius
 current_angle = -90
 
 donut_svg = ""
-labels_svg = "<g transform='translate(160, -70)'>"
+labels_svg = "<g transform='translate(220, -70)'>"
 
 for i, (name, info) in enumerate(sorted_langs):
     pct = info["size"] / total_size
