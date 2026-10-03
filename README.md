@@ -67,6 +67,13 @@
   <img src="https://skillicons.dev/icons?i=sqlite&theme=dark" />
   <img src="https://skillicons.dev/icons?i=c&theme=dark" />
   <img src="https://skillicons.dev/icons?i=cpp&theme=dark" />
+  <img src="https://skillicons.dev/icons?i=azure&theme=dark" />
+  <img src="https://skillicons.dev/icons?i=kubernetes&theme=dark" />
+  <img src="https://skillicons.dev/icons?i=cloudflare&theme=dark" />
+  <img src="https://skillicons.dev/icons?i=flutter&theme=dark" />
+  <img src="https://skillicons.dev/icons?i=java&theme=dark" />
+  <img src="https://skillicons.dev/icons?i=firebase&theme=dark" />
+  <img src="https://skillicons.dev/icons?i=postman&theme=dark" />
   <!-- Custom Icons -->
   <img src="assets/icons/salesforce.svg" />
   <img src="assets/icons/tableau.svg" />
