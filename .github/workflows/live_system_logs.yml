@@ -1,6 +1,9 @@
 name: Cyberpunk System Logs & 3D Matrix
 
 on:
+  push:
+    branches:
+      - main
   schedule:
     - cron: "0 0 * * *" # Runs daily at midnight
   workflow_dispatch: # Allows manual trigger from GitHub UI
