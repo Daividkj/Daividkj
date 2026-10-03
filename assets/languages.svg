@@ -1,4 +1,5 @@
 <svg width="800" height="150" viewBox="0 0 800 150" xmlns="http://www.w3.org/2000/svg">
+<<<<<<< Updated upstream
     <rect width="800" height="150" rx="10" fill="#0D1117" stroke="#30363D" stroke-width="1"/>
     
     <!-- Progress Bar -->
@@ -53,3 +54,10 @@
     
     </g>
 </svg>
+=======
+        <rect width="800" height="150" rx="10" fill="#0D1117" stroke="#30363D" stroke-width="1"/>
+        <text x="400" y="75" font-family="Courier New" font-size="16" fill="#8B949E" text-anchor="middle">
+            Awaiting Authorization Token to decrypt Language Metrics...
+        </text>
+    </svg>
+>>>>>>> Stashed changes
