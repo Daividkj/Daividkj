@@ -10,7 +10,9 @@
   </a>
 </div>
 
-<br>
+<div align="center">
+  <img src="assets/divider.svg" alt="divider" />
+</div>
 
 ## 💼 `[ PROFESSIONAL_EXPERTISE ]`
 <div align="left">
@@ -26,7 +28,9 @@
   </ul>
 </div>
 
-<br>
+<div align="center">
+  <img src="assets/divider.svg" alt="divider" />
+</div>
 
 ## 🧠 `[ AI_ARCHITECTURE & AGENT_SYSTEMS ]`
 <div align="left">
@@ -41,14 +45,18 @@
   </ul>
 </div>
 
-<br>
+<div align="center">
+  <img src="assets/divider.svg" alt="divider" />
+</div>
 
 ## 💻 `[ SYS.INFO / CORE_STACK ]`
 <div align="center">
   <a href="https://skillicons.dev" target="_blank" rel="noopener noreferrer"><img src="https://skillicons.dev/icons?i=js,ts,react,nextjs,nodejs,python,fastapi,aws,gcp,docker,linux,git,postgres,sqlite,c,cpp&theme=dark" /></a><img src="assets/icons/salesforce.svg" /><img src="assets/icons/tableau.svg" /><img src="assets/icons/powerbi.svg" />
 </div>
 
-<br>
+<div align="center">
+  <img src="assets/divider.svg" alt="divider" />
+</div>
 
 ## 🌐 `[ DEPLOYED_MODULES / PROJECTS ]`
 
@@ -130,7 +138,9 @@
   </tr>
 </table>
 
-<br>
+<div align="center">
+  <img src="assets/divider.svg" alt="divider" />
+</div>
 
 ## 📊 `[ GITHUB_TELEMETRY ]`
 <div align="center">
@@ -138,7 +148,9 @@
   <img src="https://github-readme-streak-stats.herokuapp.com/?user=Daividkj&theme=tokyonight&hide_border=true&background=0D1117" alt="GitHub Streak" />
 </div>
 
-<br>
+<div align="center">
+  <img src="assets/divider.svg" alt="divider" />
+</div>
 
 ## 📜 `[ SYSTEM_TRANSMISSION ]`
 <div align="center">

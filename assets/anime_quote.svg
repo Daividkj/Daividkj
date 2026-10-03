@@ -1,14 +1,44 @@
 <svg width="800" height="120" viewBox="0 0 800 120" xmlns="http://www.w3.org/2000/svg">
-    <rect width="800" height="120" rx="10" fill="#0D1117" stroke="#00FFFF" stroke-width="1"/>
-    <text x="40" y="45" font-family="Courier New, monospace" font-size="16" fill="#00FFFF" font-style="italic">"If you don't take risks, you can't create a future."</text>
-    <text x="40" y="80" font-family="Courier New, monospace" font-size="14" fill="#FF00FF" font-weight="bold">> Monkey D. Luffy</text>
+    <style>
+        @keyframes gradientMove {
+            0% { stop-color: #00FFFF; }
+            50% { stop-color: #FF00FF; }
+            100% { stop-color: #00FFFF; }
+        }
+        @keyframes breathe {
+            0% { transform: scale(1); opacity: 0.8; }
+            50% { transform: scale(1.05); opacity: 1; }
+            100% { transform: scale(1); opacity: 0.8; }
+        }
+        @keyframes rotate {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        .bg-rect { fill: #0D1117; stroke: url(#grad1); stroke-width: 2; }
+        .quote-text { font-family: 'Courier New', monospace; font-size: 16px; fill: #00FFFF; font-style: italic; }
+        .author-text { font-family: 'Courier New', monospace; font-size: 14px; fill: #FF00FF; font-weight: bold; }
+        .circle-outer { fill: none; stroke: url(#grad1); stroke-width: 2; stroke-dasharray: 4 4; transform-origin: 740px 60px; animation: rotate 10s linear infinite; }
+        .circle-inner { fill: none; stroke: #00FFFF; stroke-width: 1; transform-origin: 740px 60px; animation: breathe 4s cubic-bezier(0.4, 0, 0.2, 1) infinite; }
+        .circle-dot { fill: #FF00FF; animation: breathe 2s infinite; transform-origin: 740px 60px; }
+    </style>
+    <defs>
+        <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#00FFFF">
+                <animate attributeName="stop-color" values="#00FFFF;#FF00FF;#00FFFF" dur="5s" repeatCount="indefinite" />
+            </stop>
+            <stop offset="100%" stop-color="#FF00FF">
+                <animate attributeName="stop-color" values="#FF00FF;#00FFFF;#FF00FF" dur="5s" repeatCount="indefinite" />
+            </stop>
+        </linearGradient>
+    </defs>
+    <rect class="bg-rect" width="800" height="120" rx="10" />
+    <text x="40" y="45" class="quote-text">"If you don't take risks, you can't create a future."</text>
+    <text x="40" y="80" class="author-text">> Monkey D. Luffy</text>
     
-    <!-- Cool aesthetic circles -->
-    <circle cx="740" cy="60" r="25" fill="none" stroke="#FF00FF" stroke-width="2" stroke-dasharray="4 4"/>
-    <circle cx="740" cy="60" r="15" fill="none" stroke="#00FFFF" stroke-width="1"/>
-    <circle cx="740" cy="60" r="5" fill="#FF00FF" opacity="0.8"/>
+    <circle class="circle-outer" cx="740" cy="60" r="25" />
+    <circle class="circle-inner" cx="740" cy="60" r="15" />
+    <circle class="circle-dot" cx="740" cy="60" r="5" />
     
-    <!-- Cyberpunk grid lines -->
     <line x1="600" y1="20" x2="650" y2="20" stroke="#00FFFF" stroke-width="2"/>
     <line x1="600" y1="100" x2="700" y2="100" stroke="#FF00FF" stroke-width="2"/>
 </svg>
