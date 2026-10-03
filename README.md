@@ -170,8 +170,7 @@
 
 <img src="assets/headers/header_telemetry.svg" alt="GitHub Telemetry" />
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=Daividkj&show_icons=true&theme=tokyonight&hide_title=true&hide_border=true&bg_color=0D1117" alt="GitHub Stats" />
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=Daividkj&theme=tokyonight&hide_border=true&background=0D1117" alt="GitHub Streak" />
+  <img src="assets/telemetry.svg" alt="GitHub Stats" />
 </div>
 
 <div align="center">

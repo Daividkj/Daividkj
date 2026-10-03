@@ -1,0 +1,39 @@
+name: Update Cyberpunk Telemetry
+
+on:
+  schedule:
+    - cron: "0 0 * * *" # Runs daily at midnight
+  workflow_dispatch: # Allows manual trigger from GitHub UI
+
+permissions:
+  contents: write
+
+jobs:
+  update-telemetry:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: Install Dependencies
+        run: pip install requests
+
+      - name: Generate Telemetry SVG
+        env:
+          # This token needs to be created by the user and added to Repo Secrets as GH_PAT
+          GH_TOKEN: ${{ secrets.GH_PAT }}
+          GITHUB_ACTOR: ${{ github.actor }}
+        run: python generate_telemetry.py
+
+      - name: Commit and Push Changes
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add assets/telemetry.svg
+          git commit -m "chore: auto-update telemetry metrics [skip ci]" || echo "No changes to commit"
+          git push
