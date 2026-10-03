@@ -6,22 +6,30 @@
 
 <div align="center">
   <a href="https://github.com/Daividkj" target="_blank" rel="noopener noreferrer">
-    <img src="https://readme-typing-svg.demolab.com?font=Share+Tech+Mono&size=26&pause=1000&color=00FFFF&center=true&vCenter=true&width=800&lines=>+System+initialized...;>+Technical+Lead+|+Software+Architect;>+Fullstack+Developer;>+Building+scalable+systems..." alt="Typing SVG" />
+    <img src="https://readme-typing-svg.demolab.com?font=Share+Tech+Mono&size=26&pause=1000&color=00FFFF&center=true&vCenter=true&width=800&lines=>+System+initialized...;>+Salesforce+Architect+|+Technical+Lead;>+Building+scalable+enterprise+systems...;>+DevOps+|+Cloud+Infrastructure+|+Data..." alt="Typing SVG" />
   </a>
+</div>
+
+<br>
+
+## 💼 `[ PROFESSIONAL_EXPERTISE ]`
+<div align="left">
+  <blockquote>
+    <p><b>Salesforce Architect & Technical Lead</b> with 5+ years of experience driving large-scale implementations across regional and multinational organizations.</p>
+  </blockquote>
+  <ul>
+    <li><b>Architecture & Leadership:</b> Technical design and deployment of highly scalable solutions (Sales, Service, Field Service, Experience Cloud) across multiple countries.</li>
+    <li><b>Complex Integrations:</b> Orchestrating contracts and integrations between corporate microservices, external APIs (Google Maps, Firebase, WhatsApp), and legacy systems.</li>
+    <li><b>DevOps & Security:</b> Designing CI/CD pipelines for regional operations and implementing robust API security practices and governance.</li>
+    <li><b>Cross-functional Skills:</b> Strong background in data analytics (Python, Power BI, Tableau), C/C++, and containerized cloud deployments (Docker, AWS, Azure, Kubernetes).</li>
+  </ul>
 </div>
 
 <br>
 
 ## 💻 `[ SYS.INFO / CORE_STACK ]`
 <div align="center">
-  <a href="https://skillicons.dev" target="_blank" rel="noopener noreferrer">
-    <img src="https://skillicons.dev/icons?i=js,ts,react,nextjs,nodejs,python,fastapi,aws,gcp,docker,linux,git,postgres,sqlite,c,cpp&theme=dark" />
-  </a>
-  <br><br>
-  <!-- Custom matching icons for Salesforce, Tableau, PowerBI -->
-  <img src="assets/icons/salesforce.svg" />
-  <img src="assets/icons/tableau.svg" />
-  <img src="assets/icons/powerbi.svg" />
+  <a href="https://skillicons.dev" target="_blank" rel="noopener noreferrer"><img src="https://skillicons.dev/icons?i=js,ts,react,nextjs,nodejs,python,fastapi,aws,gcp,docker,linux,git,postgres,sqlite,c,cpp&theme=dark" /></a><img src="assets/icons/salesforce.svg" /><img src="assets/icons/tableau.svg" /><img src="assets/icons/powerbi.svg" />
 </div>
 
 <br>
