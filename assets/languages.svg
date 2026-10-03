@@ -1,63 +1,65 @@
-<svg width="800" height="150" viewBox="0 0 800 150" xmlns="http://www.w3.org/2000/svg">
-<<<<<<< Updated upstream
-    <rect width="800" height="150" rx="10" fill="#0D1117" stroke="#30363D" stroke-width="1"/>
+<svg width="800" height="250" viewBox="0 0 800 250" xmlns="http://www.w3.org/2000/svg">
+    <rect width="800" height="250" rx="10" fill="#0D1117" stroke="#30363D" stroke-width="1"/>
+    <!-- Cyberpunk grid background -->
+    <pattern id="grid" width="30" height="30" patternUnits="userSpaceOnUse">
+        <path d="M 30 0 L 0 0 0 30" fill="none" stroke="#ffffff" stroke-width="1" stroke-opacity="0.02" />
+    </pattern>
+    <rect width="800" height="250" fill="url(#grid)" />
     
-    <!-- Progress Bar -->
-    <g transform="translate(40, 40)">
-        <rect x="0" y="0" width="720" height="12" rx="6" fill="#30363D" />
+    <g transform="translate(250, 125)">
 
-        <rect x="0" y="0" width="191.489074005093" height="12" fill="#3572A5">
-            <animate attributeName="width" from="0" to="191.489074005093" dur="1.5s" fill="freeze" />
-        </rect>
-        
-        <rect x="191.489074005093" y="0" width="183.85792097564533" height="12" fill="#f1e05a">
-            <animate attributeName="width" from="0" to="183.85792097564533" dur="1.5s" fill="freeze" />
-        </rect>
-        
-        <rect x="375.3469949807383" y="0" width="166.4642601058075" height="12" fill="#3178c6">
-            <animate attributeName="width" from="0" to="166.4642601058075" dur="1.5s" fill="freeze" />
-        </rect>
-        
-        <rect x="541.8112550865458" y="0" width="80.25419102565152" height="12" fill="#e34c26">
-            <animate attributeName="width" from="0" to="80.25419102565152" dur="1.5s" fill="freeze" />
-        </rect>
-        
-        <rect x="622.0654461121973" y="0" width="46.301761754372194" height="12" fill="#663399">
-            <animate attributeName="width" from="0" to="46.301761754372194" dur="1.5s" fill="freeze" />
-        </rect>
-        
-        <rect x="668.3672078665695" y="0" width="40.116115436524396" height="12" fill="#355570">
-            <animate attributeName="width" from="0" to="40.116115436524396" dur="1.5s" fill="freeze" />
-        </rect>
-        
+        <circle cx="0" cy="0" r="80" fill="none" stroke="#3572A5" stroke-width="30" 
+                stroke-dasharray="131.8500536791958 502.6548245743669" stroke-dashoffset="131.8500536791958" transform="rotate(-90)">
+            <animate attributeName="stroke-dashoffset" from="131.8500536791958" to="0" dur="1s" fill="freeze" begin="0.0s" />
+        </circle>
+    
+        <circle cx="0" cy="0" r="80" fill="none" stroke="#f1e05a" stroke-width="30" 
+                stroke-dasharray="126.50950418027759 502.6548245743669" stroke-dashoffset="126.50950418027759" transform="rotate(4.430645054890903)">
+            <animate attributeName="stroke-dashoffset" from="126.50950418027759" to="0" dur="1s" fill="freeze" begin="0.2s" />
+        </circle>
+    
+        <circle cx="0" cy="0" r="80" fill="none" stroke="#3178c6" stroke-width="30" 
+                stroke-dasharray="121.6866260325421 502.6548245743669" stroke-dashoffset="121.6866260325421" transform="rotate(95.03640327767279)">
+            <animate attributeName="stroke-dashoffset" from="121.6866260325421" to="0" dur="1s" fill="freeze" begin="0.4s" />
+        </circle>
+    
+        <circle cx="0" cy="0" r="80" fill="none" stroke="#e34c26" stroke-width="30" 
+                stroke-dasharray="55.22154205360214 502.6548245743669" stroke-dashoffset="55.22154205360214" transform="rotate(182.18802946331573)">
+            <animate attributeName="stroke-dashoffset" from="55.22154205360214" to="0" dur="1s" fill="freeze" begin="0.6000000000000001s" />
+        </circle>
+    
+        <circle cx="0" cy="0" r="80" fill="none" stroke="#663399" stroke-width="30" 
+                stroke-dasharray="31.85945370825167 502.6548245743669" stroke-dashoffset="31.85945370825167" transform="rotate(221.73754568676063)">
+            <animate attributeName="stroke-dashoffset" from="31.85945370825167" to="0" dur="1s" fill="freeze" begin="0.8s" />
+        </circle>
+    
+        <circle cx="0" cy="0" r="80" fill="none" stroke="#355570" stroke-width="30" 
+                stroke-dasharray="27.603215823297322 502.6548245743669" stroke-dashoffset="27.603215823297322" transform="rotate(244.55519862520114)">
+            <animate attributeName="stroke-dashoffset" from="27.603215823297322" to="0" dur="1s" fill="freeze" begin="1.0s" />
+        </circle>
+    
+        <!-- Inner glow/decoration -->
+        <circle cx="0" cy="0" r="50" fill="#0D1117" stroke="#30363D" stroke-width="2" />
+        <text x="0" y="5" font-family="Courier New, monospace" font-size="14" font-weight="bold" fill="#8B949E" text-anchor="middle">CODE</text>
     </g>
-    <!-- Labels -->
-    <g transform="translate(40, 80)">
-
-        <circle cx="0" cy="-4" r="4" fill="#3572A5" />
-        <text x="15" y="0" font-family="Courier New, monospace" font-size="13" font-weight="bold" fill="#E6EDF3">Python 26.6%</text>
+<g transform='translate(160, -70)'>
+        <circle cx="0" cy="-4" r="5" fill="#3572A5" />
+        <text x="15" y="0" font-family="Courier New, monospace" font-size="14" font-weight="bold" fill="#E6EDF3">Python <tspan fill="#3572A5">26.2%</tspan></text>
     
-        <circle cx="250" cy="-4" r="4" fill="#f1e05a" />
-        <text x="265" y="0" font-family="Courier New, monospace" font-size="13" font-weight="bold" fill="#E6EDF3">JavaScript 25.5%</text>
+        <circle cx="0" cy="26" r="5" fill="#f1e05a" />
+        <text x="15" y="30" font-family="Courier New, monospace" font-size="14" font-weight="bold" fill="#E6EDF3">JavaScript <tspan fill="#f1e05a">25.2%</tspan></text>
     
-        <circle cx="500" cy="-4" r="4" fill="#3178c6" />
-        <text x="515" y="0" font-family="Courier New, monospace" font-size="13" font-weight="bold" fill="#E6EDF3">TypeScript 23.1%</text>
+        <circle cx="0" cy="56" r="5" fill="#3178c6" />
+        <text x="15" y="60" font-family="Courier New, monospace" font-size="14" font-weight="bold" fill="#E6EDF3">TypeScript <tspan fill="#3178c6">24.2%</tspan></text>
     
-        <circle cx="0" cy="26" r="4" fill="#e34c26" />
-        <text x="15" y="30" font-family="Courier New, monospace" font-size="13" font-weight="bold" fill="#E6EDF3">HTML 11.1%</text>
+        <circle cx="0" cy="86" r="5" fill="#e34c26" />
+        <text x="15" y="90" font-family="Courier New, monospace" font-size="14" font-weight="bold" fill="#E6EDF3">HTML <tspan fill="#e34c26">11.0%</tspan></text>
     
-        <circle cx="250" cy="26" r="4" fill="#663399" />
-        <text x="265" y="30" font-family="Courier New, monospace" font-size="13" font-weight="bold" fill="#E6EDF3">CSS 6.4%</text>
+        <circle cx="0" cy="116" r="5" fill="#663399" />
+        <text x="15" y="120" font-family="Courier New, monospace" font-size="14" font-weight="bold" fill="#E6EDF3">CSS <tspan fill="#663399">6.3%</tspan></text>
     
-        <circle cx="500" cy="26" r="4" fill="#355570" />
-        <text x="515" y="30" font-family="Courier New, monospace" font-size="13" font-weight="bold" fill="#E6EDF3">GDScript 5.6%</text>
+        <circle cx="0" cy="146" r="5" fill="#355570" />
+        <text x="15" y="150" font-family="Courier New, monospace" font-size="14" font-weight="bold" fill="#E6EDF3">GDScript <tspan fill="#355570">5.5%</tspan></text>
     
     </g>
 </svg>
-=======
-        <rect width="800" height="150" rx="10" fill="#0D1117" stroke="#30363D" stroke-width="1"/>
-        <text x="400" y="75" font-family="Courier New" font-size="16" fill="#8B949E" text-anchor="middle">
-            Awaiting Authorization Token to decrypt Language Metrics...
-        </text>
-    </svg>
->>>>>>> Stashed changes
